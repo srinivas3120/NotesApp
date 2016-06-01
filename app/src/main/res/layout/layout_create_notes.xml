@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_create_notes">
+
+    <RelativeLayout
+        android:id="@+id/noteTagLinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:fitsSystemWindows="false"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <Spinner
+            android:id="@+id/noteTags"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:spinnerMode="dropdown"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/noteTagsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/noteTags"
+            android:gravity="center"
+            android:text="Tag It : "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/addTag"
+            android:layout_width="72dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/noteTags"
+            android:layout_centerVertical="true"
+            android:background="@drawable/blue_bt_bg"
+            android:text="Add new Tag" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_notes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:autoLink="all"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edit"
+        android:layout_margin="8dp">
+
+    </EditText>
+
+</LinearLayout>

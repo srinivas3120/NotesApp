@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="my_notes">Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="settings">Settings</string>
+    <string name="open_drawer">drawer opened</string>
+    <string name="close_drawer">drawer closed</string>
+    <string name="string_notes">Notes</string>
+    <string name="string_settings">Settings</string>
+    <string name="string_add_notes">Add Notes</string>
+    <string name="string_ok">ok</string>
+    <string name="string_cancel">cancel</string>
+    <string name="yes">Yes</string>
+    <string name="notes_discard_msg">Your notes will be discarded. are you sure?</string>
+    <string name="empty" />
+    <string name="no_notes_msg">Welcome! You don\'t have notes.. Please create one to proceed further</string>
+    <string name="add_tag">Add tag</string>
+</resources>
